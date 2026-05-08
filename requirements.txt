@@ -1,0 +1,5 @@
+flask>=3.0
+transformers>=4.38
+torch>=2.0          # or tensorflow>=2.13 — whichever your models use
+sentencepiece       # needed by many BERT tokenisers
+requests>=2.31

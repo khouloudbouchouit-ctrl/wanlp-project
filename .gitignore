@@ -1,0 +1,21 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Node / frontend build artifacts
+dz-tourism-guide/node_modules/
+dz-tourism-guide/dist/
+
+# Environment and secrets
+.env
+*.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.cursor/
+
+# Local model directories (large files)
+dziribert_raw_tourism/
+dziribert_sentiment_model/
