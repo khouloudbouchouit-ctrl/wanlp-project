@@ -88,14 +88,6 @@ npm install
 
 Use **two terminals**.
 
-### Terminal A: Run Flask API
-
-```powershell
-cd wennew
-.\.venv\Scripts\Activate.ps1
-python app.py
-```
-
 Backend URL: `http://localhost:5000`
 
 ### Terminal B: Run React UI
