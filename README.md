@@ -1,7 +1,8 @@
 # DziriBERT Tourism Guide
 
 Full-stack web app for Algerian tourism text analysis:
-- Detects named entities from user text using a custom NER model.
+- Detects named entities from user text using a custom NER model
+- with algerian darija,arabizi,french,and arabic(fosha).
 - Runs sentiment analysis on the same text.
 - Enriches detected `LOC` entities with Wikidata + OpenStreetMap coordinates.
 - Displays detected locations on an interactive map with place details.
@@ -70,7 +71,7 @@ $env:SENTIMENT_MODEL_DIR="C:\path\to\your\sentiment_model"
 ### 1) Backend setup
 
 ```powershell
-cd c:\Users\TOSHIBA\Downloads\wennew
+cd wennew
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
@@ -79,7 +80,7 @@ pip install -r requirements.txt
 ### 2) Frontend setup
 
 ```powershell
-cd c:\Users\TOSHIBA\Downloads\wennew\dz-tourism-guide
+cd wennew\dz-tourism-guide
 npm install
 ```
 
@@ -90,7 +91,7 @@ Use **two terminals**.
 ### Terminal A: Run Flask API
 
 ```powershell
-cd c:\Users\TOSHIBA\Downloads\wennew
+cd wennew
 .\.venv\Scripts\Activate.ps1
 python app.py
 ```
@@ -100,7 +101,7 @@ Backend URL: `http://localhost:5000`
 ### Terminal B: Run React UI
 
 ```powershell
-cd c:\Users\TOSHIBA\Downloads\wennew\dz-tourism-guide
+cd wennew\dz-tourism-guide
 npm run dev
 ```
 
@@ -111,7 +112,7 @@ Vite proxy forwards `/analyze`, `/ner`, and `/sentiment` to Flask on port `5000`
 ## Build for Production
 
 ```powershell
-cd c:\Users\TOSHIBA\Downloads\wennew\dz-tourism-guide
+cd wennew\dz-tourism-guide
 npm run build
 npm run preview
 ```
